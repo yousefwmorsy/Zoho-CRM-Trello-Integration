@@ -1,4 +1,5 @@
-#Integration: ZOHO CRM + Trello
+# Integration: ZOHO CRM + Trello
+Automatically creates and configures Trello project boards when new implementation projects that are in the "Project Kickoff" stage are added/modified in the Zoho CRM. Each board is linked back to the Zoho CRM record.
 
 ## Setup Steps
 
@@ -7,7 +8,7 @@
 
 2. **Create a Python Virtual Environment**
    - Open PowerShell in the project directory.
-   - Create a virtual environment (if not already present):
+   - Create a virtual environment:
      ```powershell
      python -m venv venv
      ```
@@ -53,4 +54,4 @@
 - The script expects valid Zoho and Trello API credentials. If any environment variable is missing, the script will exit with an error.
 - The script runs in an infinite loop, polling Zoho CRM every 30 seconds (can be updated in `main.py`). Stop it with `Ctrl+C`.
 - For any issues with API limits or authentication, check the printed error messages for details.
-- These setup details are for a windows environment, linux environments may have some different steps
+- These setup details are for a windows environment, linux environments may have some different steps.
